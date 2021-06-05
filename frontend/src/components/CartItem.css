@@ -13,7 +13,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.cartitem:hover{
+.cartitem:hover {
   transform: scale(1.03);
 }
 
@@ -23,10 +23,13 @@
   font-weight: bold;
   transition: all 0.2s ease-in-out;
 }
+.cartitem > a {
+  color: #171717;
+  text-decoration: none;
+}
 
-.cartitem__name:hover {
+.cartitem:hover > a {
   color: #058171;
-  transform: scale(1.01);
 }
 
 .cartitem__select {

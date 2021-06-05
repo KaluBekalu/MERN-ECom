@@ -1,11 +1,11 @@
-import '../components/CartItemInfo.css'
+import "../components/CartItemInfo.css";
 
-const CartItemInfo = () => {
+const CartItemInfo = ({ getCartCount, getCartSubTotal }) => {
   return (
     <div className="cartscreen__info_container">
       <div className="cartscreen__info">
-        <p>Subtitle (0)</p>
-        <p>Price $499.99</p>
+        <p>Subtotal ({getCartCount()}) items</p>
+        <p>${getCartSubTotal()}</p>
       </div>
       <div>
         <button>Proceede To Checkout</button>

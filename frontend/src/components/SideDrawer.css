@@ -52,8 +52,6 @@
   margin-left: 8px;
 }
 .sidedrawer_cartbadge {
-  width: 30px;
-  height: 30px;
   background: #171717;
   border-radius: 50%;
   margin-left: 8px;
@@ -66,12 +64,23 @@
 }
 .sidedrawer__links > li:hover > a > span > span {
   background-color: #058171;
+  border-radius: 50%;
   color: #171717;
   transition: all 0.3s ease-in-out;
 }
+.sidedrawer__links > li > a > span > span {
+  background-color: #171717;
+  color: #f4f4f4;
+  width: 40px;
+  height: 40px;
+  padding: 6px 3px 3px 0;
+  margin: 0 10px;
+  border-radius: 50%;
+  /* transition: all 0.3s ease-in-out; */
+}
 
 @media (min-width: 960px) {
-  .sidedrawer{
+  .sidedrawer {
     display: none;
   }
 }

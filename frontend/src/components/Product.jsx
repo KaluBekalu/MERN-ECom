@@ -1,19 +1,39 @@
-import "./Product.css";
+import "./SideDrawer.css";
 import { Link } from "react-router-dom";
-const Product = ({ imageUrl, name, description, price, productId }) => {
+import { useSelector } from "react-redux";
+
+const SideDrawer = ({ show, click }) => {
+  const sideDrawerClass = ["sidedrawer"];
+
+  const cart = useSelector((state) => state.cart);
+  const { cartItems } = cart;
+
+  const getCartCount = () => {
+    return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
+  };
+
+  if (show) {
+    sideDrawerClass.push("show");
+  }
+
   return (
-    <div className="product">
-      <img src={imageUrl} alt="product name" />
-      <div className="product__info">
-        <p className="info__name">{name}</p>
-        <p className="info__description">{description.substring(0, 100)}...</p>
-        <p className="info_price">${price}</p>
-        <Link to={`/product/${productId}`} className="info__button">
-          View
-        </Link>
-      </div>
+    <div className={sideDrawerClass.join(" ")}>
+      <ul className="sidedrawer__links" onClick={click}>
+        <li>
+          <Link to="/cart">
+            <i className="fas fa-shopping-cart"></i>
+            <span>
+              Cart{" "}
+              <span className="sidedrawer__cartbadge">{getCartCount()}</span>
+            </span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/">Shop</Link>
+        </li>
+      </ul>
     </div>
   );
 };
 
-export default Product;
+export default SideDrawer;
