@@ -19,7 +19,7 @@
   margin: 1rem;
   flex: 0.4;
   background: #fff;
-  height: fit-content;
+  /* height: fit-content; */
   font-size: 0.9rem;
   border-radius: 10px;
   border: 1px solid #058171;
@@ -89,39 +89,39 @@
 @media (max-width: 960px) {
   .productscreen {
     flex-direction: column;
-    
-  transition: all 1s ease-in-out;
+    width: 95%;
+    transition: all 0.2 ease-in-out;
   }
 
   .productscreen__left {
     flex-direction: column;
     flex: 1;
-    
-  transition: all 1s ease-in-out;
+    width: 95%;
+    transition: all 0.2 ease-in-out;
   }
 
   .left__image {
     flex: 1;
-    
-  transition: all 1s ease-in-out;
+    width: 95%;
+    transition: all 0.2 ease-in-out;
   }
 
   .left__info {
     flex: 1;
-    
-  transition: all 1s ease-in-out;
+    width: 95%;
+    transition: all 0.2 ease-in-out;
   }
 
   .productscreen__right {
     display: block;
-    
-  transition: all 1s ease-in-out;
+    width: 95%;
+    transition: all 0.2 ease-in-out;
   }
 
   .right__info {
     display: block;
     width: 95%;
-    
-  transition: all 1s ease-in-out;
+    width: 95%;
+    transition: all 0.2 ease-in-out;
   }
 }

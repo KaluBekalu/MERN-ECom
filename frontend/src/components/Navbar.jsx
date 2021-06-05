@@ -6,7 +6,7 @@ const Navbar = ({ click }) => {
     <div className="navcontainer">
       <nav className="navabar">
         <Link to="/" className="navbar_logo">
-          <i class="fas fa-shopping-cart"> </i>
+          <i className="fas fa-shopping-cart"> </i>
           <h2>MERN Shopping Cart</h2>
         </Link>
 
