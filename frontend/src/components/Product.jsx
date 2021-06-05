@@ -4,7 +4,7 @@ const Product = () => {
   return (
     <div className="product">
       <img 
-        src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80"
+        src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRK6etXoyWCtoC22Kf7TzQO6AO6q2TVYdxNSKvGLvg6B8Mw5vOJsldAcyrsb7awZhiVHxh4Vi89mSj-g9-HkueweJpGv0py"
         alt="product name"
       />
       <div className="product__info">

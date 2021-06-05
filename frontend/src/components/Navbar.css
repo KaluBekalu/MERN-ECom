@@ -1,20 +1,40 @@
-.navabar {
+.navcontainer {
   width: 100%;
+  display: flex;
   background-color: #171717;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.navabar {
+  margin: 0px auto;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 1rem;
   z-index: 50;
   height: 85px;
+  font-family: "Cinzel", serif;
 }
 
 .navbar_logo h2 {
   color: #f4f4f4;
   font-size: 1.4rem;
   cursor: pointer;
+  margin-left: 3px;
+  margin-right: auto;
 }
 
+.navbar_logo > i{
+  font-size: 150%;
+}
+
+.navbar_logo:hover > i{
+  font-size: 150%;
+  color: #058171;
+  transition: all 0.3s ease-in;
+
+}
 .navbar_logo:hover h2 {
   color: #058171;
   transition: all 0.3s ease-in-out;
@@ -30,6 +50,7 @@
   padding-left: 1.5rem;
 }
 
+.navabar > a,
 .navbar_links > li > a {
   text-decoration: none;
   color: #f4f4f4;
@@ -42,6 +63,13 @@
   display: flex;
   align-items: center;
   margin-left: 8px;
+}
+.navbar_links > li:nth-child(1) > a{
+ font-weight:500;
+}
+.navbar_links > li:nth-child(1):hover > a{
+  color: #058171;
+  transition: all 0.3s ease-in-out;
 }
 
 .cart__link {

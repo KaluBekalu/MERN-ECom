@@ -1,0 +1,53 @@
+.cartscreen {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartscreen > h2 {
+  margin: 3rem auto 0rem auto;
+}
+
+.cartbody {
+  display: flex;
+  max-width: 1300px;
+  margin: 2rem auto;
+}
+
+.cartbody h2 {
+  margin-bottom: 1rem;
+}
+
+.cartbody__left,
+.cartbody__right {
+  flex: 0.7;
+  background: transparent;
+  padding: 1rem;
+}
+
+@media (max-width: 1320px) {
+  .cartbody {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .cartbody {
+    max-width: 950px;
+  }
+}
+@media (max-width: 970px) {
+  .cartbody {
+    max-width: 850px;
+  }
+}
+@media (max-width: 875px) {
+  .cartbody {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 815px) {
+  .cartbody {
+    flex-direction: column;
+  }
+}
